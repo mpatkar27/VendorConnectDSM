@@ -1,0 +1,60 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.VCDSM.specedit.control" xmlns="sap.m">
+	<Dialog title="{i18n>CharEditUserDefinedText.title}" contentWidth="50rem" class="sapUiNoContentPadding">
+		<content>
+			<Toolbar design="Transparent">
+				<Label text="{i18n>CharEditUserDefinedText.table.header}"/>
+				<ToolbarSpacer/>
+				<Button icon="sap-icon://add" press="_onCreate" enabled="{appModel>/editMode}"/>
+			</Toolbar>
+
+			<gramont:Table id="table" items="{/}">
+				<gramont:columns>
+					<gramont:Column id="table.text.std" width="80%">
+						<Label text="{i18n>CharEditUserDefinedText.table.text}" design="Bold"/>
+					</gramont:Column>
+					<gramont:Column id="table.text.long" width="80%">
+						<Label text="{i18n>CharEditUserDefinedText.table.text}" design="Bold"/>
+					</gramont:Column>
+					<gramont:Column width="20%">
+						<Label text="{i18n>CharEditUserDefinedText.table.lang}" design="Bold"/>
+					</gramont:Column>
+				</gramont:columns>
+
+				<gramont:items>
+					<gramont:ColumnListItem id="table.item">
+						<gramont:Field editMode="{appModel>/editMode}" width="100%">
+							<gramont:display>
+								<Text text="{TEXT}"/><!-- Allow wrapping -->
+							</gramont:display>
+							<gramont:edit>
+								<Input width="30rem" value="{TEXT}" maxLength="132"/>
+							</gramont:edit>
+						</gramont:Field>
+						
+						<gramont:Field editMode="{appModel>/editMode}" width="100%">
+							<gramont:display>
+								<Text width="30rem" text="{TEXT}"/><!-- Allow wrapping -->
+							</gramont:display>
+							<gramont:edit>
+								<TextArea width="30rem" rows="5" value="{TEXT}"/>
+							</gramont:edit>
+						</gramont:Field>
+
+						<gramont:Field editMode="{appModel>/editMode}" width="100%">
+							<gramont:display>
+								<Text wrapping="false" text="{LANGU}"/>
+							</gramont:display>
+							<gramont:edit>
+								<Input width="5rem" value="{LANGU}" showValueHelp="true" maxLength="2" valueHelpRequest="_onValueHelpRequest"/>
+							</gramont:edit>
+						</gramont:Field>
+					</gramont:ColumnListItem>
+				</gramont:items>
+			</gramont:Table>
+		</content>
+
+		<endButton>
+			<Button text="{i18n>Common.close}" press="_onClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

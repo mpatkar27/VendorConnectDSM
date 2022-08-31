@@ -1,0 +1,13 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="ESM2.control" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	xmlns:upload="sap.m.upload" xmlns:u="sap.ui.unified">
+	<Dialog title="{i18n>language.title}" class="sapUiNoContentPadding" resizable="true" contentHeight="60%" contentWidth="70%">
+		<content>
+			<SelectList items="{/}" selectionChange="_onok">
+				<core:Item key="{SPRAS}" text="{SPTXT}"/>
+			</SelectList>
+		</content>
+		<buttons>
+			<Button id="clsbtn" text="{i18n>cls}" press="_onCloseusag"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

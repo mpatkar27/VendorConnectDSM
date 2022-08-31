@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var e={FieldValueSep:"␋"};return e});

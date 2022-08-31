@@ -1,0 +1,86 @@
+<core:FragmentDefinition id="MLCfrag" xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout">
+	<Panel id="mlcsubsec" expandable="true" headerText="{propModel>/title}" width="auto" class="sapUiResponsiveMargin" expanded="true">
+		<headerToolbar>
+			<OverflowToolbar>
+				<Title text="{propModel>/title}"/>
+				<core:Icon src="sap-icon://message-information" press="_infopop" visible="{editMode}"/>
+			</OverflowToolbar>
+		</headerToolbar>
+		<content>
+			<t:TreeTable id="MultiComp" selectionMode="MultiToggle" enableSelectAll="false" ariaLabelledBy="title"
+				rows="{path:'/', parameters: {arrayNames:['aCompositions']}}" toggleOpenState="_ontogglestate" rowSelectionChange="_Delflagset">
+				<t:extension>
+					<OverflowToolbar style="Clear">
+						<Title id="title" text=""/>
+						<core:Icon src="sap-icon://expand-all" tooltip="{i18n>expn}" press="_Expandall"/>
+						<core:Icon src="sap-icon://collapse-all" tooltip="{i18n>colln}" press="_Collapseall"/>
+						<ToolbarSpacer/>
+						<Label text="{i18n>refval}"/>
+						<ObjectStatus id="OBRef" text=""/>
+						<Button text="Delete" press="deletenode" tooltip="{i18n>delseln}"/>
+						<Button text="+ Add" press="addparentnode" tooltip="{i18n>addparn}"/>
+					</OverflowToolbar>
+				</t:extension>
+				<t:columns>
+					<t:Column>
+						<Label text="{i18n>Name}"/>
+						<t:template>
+							<Text text="{IDENT1}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="{i18n>comptyp}"/>
+						<t:template>
+							<Text text="{COMPNAM}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="{i18n>ingr}"/>
+						<t:template>
+							<FlexBox justifyContent="Start">
+								<Text text="{NoofChildnodes}" wrapping="false" class="sapUiSmallMarginEnd"/>
+								<Button icon="sap-icon://sys-add" tooltip="{i18n>addcn}" press="addchildnode" visible="{ADDCHDBTN}"/>
+							</FlexBox>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="{i18n>totval}"/>
+						<t:template>
+							<Input value="{COMPAVG}" visible="{ITOTVALVIS0}" change="_onChange"/>
+						</t:template>
+					</t:Column>
+					<t:Column id="Cl1" visible="false">
+						<Label text="{i18n>valplev}"/>
+						<t:template>
+							<Input value="{COMPAVG}" visible="{ITOTVALVIS1}" change="_onChange"/>
+						</t:template>
+					</t:Column>
+					<t:Column id="Cl2" visible="false">
+						<Label text="{i18n>valplev}"/>
+						<t:template>
+							<Input value="{COMPAVG}" visible="{ITOTVALVIS2}" change="_onChange"/>
+						</t:template>
+					</t:Column>
+					<t:Column id="Cl3" visible="false">
+						<Label text="{i18n>valplev}"/>
+						<t:template>
+							<Input value="{COMPAVG}" visible="{ITOTVALVIS3}" change="_onChange"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="{i18n>uom}"/>
+						<t:template>
+							<Text text="{UOM}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+					<t:Column>
+						<Label text="{i18n>orgcntry}"/>
+						<t:template>
+							<Text text="{COUNTRY_ORIG}" wrapping="false"/>
+						</t:template>
+					</t:Column>
+				</t:columns>
+			</t:TreeTable>
+		</content>
+	</Panel>
+</core:FragmentDefinition>

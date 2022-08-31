@@ -1,0 +1,6 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.VCDSM.specedit.control" xmlns:uxap="sap.uxap" xmlns="sap.m">
+	<!--<Panel expandable="true" headerText="{propModel>/title}" width="auto" class="sapUiResponsiveMargin" expanded="true">-->
+		<MessageStrip id = "msgstrp" text="" showIcon="true"
+			class="sapUiMediumMarginBottom"></MessageStrip>
+	<!--</Panel>-->
+</core:FragmentDefinition>

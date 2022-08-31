@@ -1,0 +1,624 @@
+{
+    "resources": [
+        {
+            "name": "util/ModelManagerCollection.js"
+        },
+        {
+            "name": "i18n/i18n_de.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_de"
+        },
+        {
+            "name": "i18n/i18n_en.properties",
+            "raw": "i18n/i18n.properties",
+            "locale": "_en"
+        },
+        {
+            "name": "util/Commit.js"
+        },
+        {
+            "name": "manifest.json"
+        },
+        {
+            "name": "util/ValueHelperDialog.js"
+        },
+        {
+            "name": "util/Util.js"
+        },
+        {
+            "name": "util/UsageDiag.js"
+        },
+        {
+            "name": "util/TableManagerConst.js"
+        },
+        {
+            "name": "util/TableManager.js"
+        },
+        {
+            "name": "util/SpecDataTabProp.js"
+        },
+        {
+            "name": "util/SpecDataTabMessage.js"
+        },
+        {
+            "name": "util/SpecDataTabBase.js"
+        },
+        {
+            "name": "util/SpecDataTabAttachment.js"
+        },
+        {
+            "name": "util/SpecDataError.js"
+        },
+        {
+            "name": "util/SaveHandler.js"
+        },
+        {
+            "name": "util/PropQuant.js"
+        },
+        {
+            "name": "util/PropQual.js"
+        },
+        {
+            "name": "util/PropMultiComposition.js"
+        },
+        {
+            "name": "util/PropMode.js"
+        },
+        {
+            "name": "util/PropInstance.js"
+        },
+        {
+            "name": "util/PropBase.js"
+        },
+        {
+            "name": "util/Phrase.js"
+        },
+        {
+            "name": "util/PLMODataManager.js"
+        },
+        {
+            "name": "util/PLMModelManager.js"
+        },
+        {
+            "name": "util/ODataManagerException.js"
+        },
+        {
+            "name": "util/ODataManager.js"
+        },
+        {
+            "name": "util/MultilevelAdd.js"
+        },
+        {
+            "name": "util/ModelManagerStatus.js"
+        },
+        {
+            "name": "util/ModelManagerIntStatus.js"
+        },
+        {
+            "name": "util/ModelManagerConst.js"
+        },
+        {
+            "name": "i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "util/ModelManagerChangeType.js"
+        },
+        {
+            "name": "util/ModelManagerAutoGrowOp.js"
+        },
+        {
+            "name": "util/ModelManagerAdmin.js"
+        },
+        {
+            "name": "util/ModelManager.js"
+        },
+        {
+            "name": "util/LangValueHelp.js"
+        },
+        {
+            "name": "util/ControllerBase.js"
+        },
+        {
+            "name": "util/CompType.js"
+        },
+        {
+            "name": "frag/treetabledata.json"
+        },
+        {
+            "name": "util/CharHeaderUserDefinedText.js"
+        },
+        {
+            "name": "util/CharHeaderTime.js"
+        },
+        {
+            "name": "util/CharHeaderNum.js"
+        },
+        {
+            "name": "util/CharHeaderFactory.js"
+        },
+        {
+            "name": "util/CharHeaderException.js"
+        },
+        {
+            "name": "util/CharHeaderDocLink.js"
+        },
+        {
+            "name": "util/CharHeaderDate.js"
+        },
+        {
+            "name": "util/CharHeaderCurr.js"
+        },
+        {
+            "name": "util/CharHeaderCharPhrase.js"
+        },
+        {
+            "name": "util/CharHeaderChar.js"
+        },
+        {
+            "name": "util/CharHeaderBasic.js"
+        },
+        {
+            "name": "util/CharHeaderBaseConst.js"
+        },
+        {
+            "name": "util/CharHeaderBase.js"
+        },
+        {
+            "name": "util/CharEditUserDefinedText.js"
+        },
+        {
+            "name": "util/CharEditDocLink.js"
+        },
+        {
+            "name": "util/CharEditCommon.js"
+        },
+        {
+            "name": "util/AttachmentDialog.js"
+        },
+        {
+            "name": "util/AdhocReport.js"
+        },
+        {
+            "name": "util/AddCountry.js"
+        },
+        {
+            "name": "controller/SpecData.controller.js"
+        },
+        {
+            "name": "controller/Main.controller.js"
+        },
+        {
+            "name": "control/TableRenderer.js"
+        },
+        {
+            "name": "control/TableConst.js"
+        },
+        {
+            "name": "control/Table.js"
+        },
+        {
+            "name": "control/FieldRenderer.js"
+        },
+        {
+            "name": "control/Field.js"
+        },
+        {
+            "name": "control/ExpandVerticalLayoutRenderer.js"
+        },
+        {
+            "name": "control/ExpandVerticalLayout.js"
+        },
+        {
+            "name": "control/DestroyListener.js"
+        },
+        {
+            "name": "control/ColumnListItem.js"
+        },
+        {
+            "name": "control/Column.js"
+        },
+        {
+            "name": "control/CharValueControlRenderer.js"
+        },
+        {
+            "name": "control/CharValueControl.js"
+        },
+        {
+            "name": "control/AlwaysEnabledRenderer.js"
+        },
+        {
+            "name": "control/AlwaysEnabled.js"
+        },
+        {
+            "name": "Component.js"
+        },
+        {
+            "name": "manifest-bundle.zip"
+        },
+        {
+            "name": "Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "util/CharHeaderException-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/Util-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/UsageDiag-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/TableManagerConst-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/TableManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/SpecDataTabProp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/SpecDataTabMessage-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/SpecDataTabBase-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/SpecDataTabAttachment-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/SpecDataError-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/SaveHandler-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PropQuant-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PropQual-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PropMultiComposition-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PropMode-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PropInstance-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PropBase-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/Phrase-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PLMODataManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/PLMModelManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ODataManagerException-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ODataManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/MultilevelAdd-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerStatus-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerIntStatus-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerConst-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerCollection-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerChangeType-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerAutoGrowOp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManagerAdmin-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ModelManager-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/LangValueHelp-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ControllerBase-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CompType-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/Commit-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderUserDefinedText-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderTime-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderNum-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderFactory-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/ValueHelperDialog-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderDocLink-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderDate-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderCurr-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderCharPhrase-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderChar-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderBasic-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderBaseConst-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharHeaderBase-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharEditUserDefinedText-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharEditDocLink-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/CharEditCommon-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/AttachmentDialog-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/AdhocReport-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "util/AddCountry-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/SpecData-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "controller/Main-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/TableRenderer-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/TableConst-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/Table-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/FieldRenderer-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/Field-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/ExpandVerticalLayoutRenderer-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/ExpandVerticalLayout-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/DestroyListener-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/ColumnListItem-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/Column-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/CharValueControlRenderer-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/CharValueControl-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/AlwaysEnabledRenderer-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "control/AlwaysEnabled-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../../sap-ui-version.json"
+        },
+        {
+            "name": "index.html"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "view/SpecData.view.xml"
+        },
+        {
+            "name": "view/Main.view.xml"
+        },
+        {
+            "name": "images/DSMlogo.jpg"
+        },
+        {
+            "name": "frag/helpopup.fragment.xml"
+        },
+        {
+            "name": "frag/ValueHelperDialog.fragment.xml"
+        },
+        {
+            "name": "frag/UsageDiag.fragment.xml"
+        },
+        {
+            "name": "frag/SpecDataTabProp.fragment.xml"
+        },
+        {
+            "name": "frag/SpecDataTabMessage.fragment.xml"
+        },
+        {
+            "name": "frag/SpecDataTabAttachment.fragment.xml"
+        },
+        {
+            "name": "frag/SpecDataError.fragment.xml"
+        },
+        {
+            "name": "frag/Ratingvaluehelp.fragment.xml"
+        },
+        {
+            "name": "frag/PropQuant.fragment.xml"
+        },
+        {
+            "name": "frag/PropQual.fragment.xml"
+        },
+        {
+            "name": "frag/PropMultiComposition.fragment.xml"
+        },
+        {
+            "name": "frag/PropInstance.fragment.xml"
+        },
+        {
+            "name": "frag/Phrase.fragment.xml"
+        },
+        {
+            "name": "frag/MultilevelAdd.fragment.xml"
+        },
+        {
+            "name": "frag/MaterialValuehelp.fragment.xml"
+        },
+        {
+            "name": "frag/LangValueHelp.fragment.xml"
+        },
+        {
+            "name": "frag/Commit.fragment.xml"
+        },
+        {
+            "name": "frag/CharEditUserDefinedText.fragment.xml"
+        },
+        {
+            "name": "frag/CharEditDocLink.fragment.xml"
+        },
+        {
+            "name": "frag/CharEditCommon.fragment.xml"
+        },
+        {
+            "name": "frag/BusyDialog.fragment.xml"
+        },
+        {
+            "name": "frag/AttachmentDialog.fragment.xml"
+        },
+        {
+            "name": "frag/AdhocReport.fragment.xml"
+        },
+        {
+            "name": "frag/AddCountry.fragment.xml"
+        },
+        {
+            "name": "css/style.css"
+        }
+    ]
+}

@@ -1,0 +1,45 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog contentWidth="50rem" class="sapUiNoContentPadding">
+		<!-- Custom header is needed to place button in dialog header. -->
+		<customHeader>
+			<Bar>
+				<contentMiddle>
+					<Label text="{i18n>CharEditCommon.title}"/>
+				</contentMiddle>
+
+				<contentRight>
+					<Button icon="sap-icon://add" visible="{dialogModel>/visibleCreate}" press="_onCreate"/>
+				</contentRight>
+			</Bar>
+		</customHeader>
+		
+		<subHeader>
+			<Bar>
+				<contentMiddle>
+					<SearchField id="search" liveChange="_onSearch"/>	
+				</contentMiddle>
+			</Bar>
+		</subHeader>
+
+		<content>
+			<Table id="table" mode="{dialogModel>/tableMode}" growing="true" growingThreshold="100" selectionChange="_onSelect" includeItemInSelection="true" sticky="ColumnHeaders,HeaderToolbar,InfoToolbar">
+				<columns>
+					<!--<Column width="30%">-->
+					<!--	<Label text="{i18n>CharEditCommon.table.charValue}" design="Bold"/>-->
+					<!--</Column>-->
+					<Column width="70%">
+						<Label text="{i18n>CharEditCommon.table.charDescr}" design="Bold"/>
+					</Column>
+				</columns>
+			</Table>
+		</content>
+
+		<beginButton>
+			<Button text="{i18n>Common.ok}" press="_onOK"/>
+		</beginButton>
+
+		<endButton>
+			<Button text="{i18n>Common.cancel}" press="_onCancel"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

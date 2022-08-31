@@ -1,0 +1,58 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.plm_specedit.control" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	xmlns:upload="sap.m.upload" xmlns:u="sap.ui.unified">
+	<Dialog title="{i18n>usagedig.title}" class="sapUiNoContentPadding" resizable="true" contentHeight="60%" contentWidth="70%">
+		<content>
+			<!--<Table id="usagetab" items="{resModel>/aData/}">-->
+			<Table id="usagetab" items="{/}">	
+				<columns>
+					<Column>
+						<Text text="{i18n>Rating}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>Ratingdesc}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>validity}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>validitydesc}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>category}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>categorydesc}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>excluding}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>active}"/>
+					</Column>
+					<Column>
+						<Text text="{i18n>relevant}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem vAlign="Middle">
+						<cells>
+							<Input value="{VACLID}" showValueHelp="true" valueHelpRequest="_onValueHelpRequestVAC" change="_onchange" />
+							<Text text="{VACLNAM}"/>
+							<Input value="{RVLID}" showValueHelp="true" valueHelpRequest="_onValueHelpRequestVAC" change="_onchange"/>
+							<Text text="{RVLNAM}"/>
+							<Text text="{RVLTYPE}"/>
+							<Text text="{RVLTYPENAM}"/>
+							<CheckBox selected="{EXCLFLG}" select="_onchange"/>
+							<CheckBox selected="{ACTVFLG}" select="_onchange"/>
+							<CheckBox selected="{ESNTFLG}" select="_onchange"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button id="upldbtn" text="{i18n>Ok}" press="_onok"/>
+			<Button id="clsbtn" text="{i18n>cls}" press="_onCloseusag"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

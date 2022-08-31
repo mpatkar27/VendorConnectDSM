@@ -1,0 +1,24 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.plm_specedit.control" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	xmlns:upload="sap.m.upload" xmlns:u="sap.ui.unified" xmlns:f="sap.ui.layout.form">
+	<Dialog title="{i18n>Multilevel.title}" contentWidth="50rem" class="sapUiNoContentPadding">
+		<content>
+			<f:SimpleForm id="upldform" editable="true" layout="ResponsiveGridLayout">
+				<Label text="{i18n>selsubid}" labelFor="selectfsub"/>
+				<Select id="selectfsub" change="_onChangesel" items="{/}">
+					<core:Item key="{SUBID}" text="{IDENT1}" enabled="true"/>
+				</Select>
+				<Label text="{i18n>desc}" labelFor="inpdesc"/>
+				<Input id="inpdesc" placeholder="{i18n>entdesc}" change="_onChangedes"/>
+				<Label text="{i18n>docval}" labelFor="fdt"/>
+				<DatePicker id="fdt" change="_onChangedat" valueFormat="yyyy.MM.dd"/>
+				<Label text="{i18n>selfile}" labelFor="uploader"/>
+				<u:FileUploader id="uploaderd" icon="sap-icon://add" multiple="false" sendXHR="true" useMultipart="false" sameFilenameAllowed="true"
+					uploadComplete="_onUploadComplete" uploadOnChange="false" change="_onChange"/>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button id="upldbtn" text="{i18n>upl}" press="_onupld"/>
+			<Button id="clsbtn" text="{i18n>cls}" press="_onClose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

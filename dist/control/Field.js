@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Control"],function(e){"use strict";var t=e.extend("gramont.VCDSM.specedit.control.Field",{metadata:{properties:{editMode:{type:"boolean",defaultValue:false},width:{type:"sap.ui.core.CSSSize",defaultValue:""}},aggregations:{display:{type:"sap.ui.core.Control",multiple:false},edit:{type:"sap.ui.core.Control",multiple:false}}}});return t});

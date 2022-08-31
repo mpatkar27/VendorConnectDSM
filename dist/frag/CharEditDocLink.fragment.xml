@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.VCDSM.specedit.control" xmlns:unified="sap.ui.unified" xmlns="sap.m">
+	<Dialog title="{i18n>CharEditDocLink.title}" contentWidth="50rem" class="sapUiNoContentPadding">
+		<content>
+			<Toolbar design="Transparent">
+				<Label text="{i18n>CharEditDocLink.table.header}"/>
+				<ToolbarSpacer/>
+				<unified:FileUploader id="uploader" buttonOnly="true" iconOnly="true" icon="sap-icon://add" multiple="false" uploadOnChange="true" sendXHR="true" useMultipart="false" sameFilenameAllowed="true" enabled="{parts: [{path: 'appModel>/editMode'}, {path: 'dialogModel>/enableCreate'}], formatter: '._formatCreateEnabled'}" uploadStart="_onUploadStart" uploadComplete="_onUploadComplete"/>
+			</Toolbar>
+			
+			<gramont:Table id="table" items="{/}">
+				<gramont:columns>
+					<gramont:Column width="100%">
+						<Label text="{i18n>CharEditDocLink.table.filename}" design="Bold"/>
+					</gramont:Column>
+				</gramont:columns>
+
+				<gramont:items>
+					<gramont:ColumnListItem id="table.item">
+						<Link text="{FILENAME}" press="_onDocOpen"/>
+					</gramont:ColumnListItem>
+				</gramont:items>
+			</gramont:Table>
+		</content>
+
+		<endButton>
+			<Button text="{i18n>Common.close}" press="_onClose"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

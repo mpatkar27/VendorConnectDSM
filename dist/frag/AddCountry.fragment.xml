@@ -1,0 +1,29 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.plm_specedit.control" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	xmlns:upload="sap.m.upload" xmlns:u="sap.ui.unified">
+	<Dialog title="{i18n>addcountry.title}" class="sapUiNoContentPadding" resizable="true" contentHeight="60%" contentWidth="70%">
+		<content>
+			
+			<Table id="countryusagetab" items="{/}">	
+				<columns>
+					<Column width="5%">
+					</Column>
+					<Column>
+						<Text text="{i18n>Ratingdesc}"/>
+					</Column>
+				</columns>
+				<items>
+					<ColumnListItem vAlign="Middle">
+						<cells>
+							<CheckBox selected="{Selected}" select="_onSelectionChng"/>
+							<Text text="{RVLNAM}"/>
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<buttons>
+			<Button id="upldbtn" text="{i18n>Ok}" press="_onok"/>
+			<Button id="clsbtn" text="{i18n>cls}" press="_onCloseusag"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

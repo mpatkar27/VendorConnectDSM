@@ -1,0 +1,7 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<MessagePopover placement="Top" items="{/}">
+		<items>
+			<MessageItem title="{label}" description="{parts: [{path: 'entryErrors'}, {path: 'fieldErrorsByField'}], formatter: '._formatDescription'}" type="Error"/>
+		</items>
+	</MessagePopover>
+</core:FragmentDefinition>

@@ -1,0 +1,9 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Popover title="{i18n>PropControlInfo.title}" class="sapUiPopupWithPadding" contentWidth="35rem">
+		<content>
+			<VBox class="sapUiSmallMargin">
+			<Text id="helptxt" text="{resModel>/aData}"/>
+			</VBox>
+		</content>
+	</Popover>
+</core:FragmentDefinition>

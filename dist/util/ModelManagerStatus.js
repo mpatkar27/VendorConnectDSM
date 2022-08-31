@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var e={Empty:"Empty",New:"New",Modified:"Modified",Unchanged:"Unchanged",Deleted:"Deleted"};return e});

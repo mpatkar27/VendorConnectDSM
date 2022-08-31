@@ -1,0 +1,59 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.VCDSM.specedit.control" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	xmlns:uir="sap.ui.richtexteditor" xmlns:smartForm="sap.ui.comp.smartform">
+	<!--<uxap:ObjectPageSubSection>-->
+	<Panel expandable="true" headerText="{propModel>/title}" width="auto" class="sapUiResponsiveMargin" expanded="true" id="instsubsec">
+		<headerToolbar>
+			<OverflowToolbar>
+				<Title text="{propModel>/title}"/>
+				<core:Icon src="sap-icon://message-information" press="_infopop" visible="{editMode}"/>
+				<ComboBox id="cb_udtinst" items="{/}" change="_onCmbChange">
+					<core:Item key="{ORD}" text="{ORD}"/>
+				</ComboBox>
+				<ToolbarSpacer/>
+				<ToolbarSpacer/>
+				<Button id="delbtn" text="Delete" type="Reject" icon="sap-icon://delete" press="_onDelete"/>
+				<Button id="addbtn" text="Add Country" type="Emphasized" icon="sap-icon://add" press="_onAddCountry"/>
+			</OverflowToolbar>
+		</headerToolbar>
+			<content>
+				<smartForm:SmartForm id="table" editTogglable="false" title="{Name}" editable="true">
+					<smartForm:layout>
+						<smartForm:ColumnLayout id="ColLay" columnsM="2" columnsL="3" columnsXL="4"/>
+					</smartForm:layout>
+					<smartForm:Group label="" id="grp1"></smartForm:Group>
+				</smartForm:SmartForm>
+				<Table id="udt">
+					<columns></columns>
+				</Table>
+				<Table id="udt1" items="{/}">
+					<columns>
+						<Column width="20%">
+							<Text text="{i18n>Name}"/>
+						</Column>
+						<Column>
+							<Text text="{i18n>val}"/>
+						</Column>
+					</columns>
+					<items>
+						<ColumnListItem vAlign="Middle">
+							<cells>
+								<VBox>
+									<items>
+										<CheckBox id="cb1" select="_onselect"/>
+										<Label text=""/>
+										<Label text="{TEXTNAM}"/>
+										<Label text=""/>
+										<Input id="cb_lang" change="_onChange" value="{LANGU}" valueHelpRequest="_Langvalhelp" placeholder="{i18n>selectlang}" valueHelpOnly="true" showValueHelp="true"/>
+										<!--<core:Icon src="sap-icon://edit" tooltip="{i18n>editusage}" press="_oneditinst"/>-->
+									</items>
+								</VBox>
+								<uir:RichTextEditor id="Rtc1" value="{TEXT}" change="_onChange" width="100%"/>
+							</cells>
+						</ColumnListItem>
+					</items>
+				</Table>
+				<Button id="udtinstadd" width="100%" icon="sap-icon://add" tooltip="" class="addTextButton" type="Transparent" press="_onAdd"/>
+			</content>
+	</Panel>
+	<!--</uxap:ObjectPageSubSection>-->
+</core:FragmentDefinition>

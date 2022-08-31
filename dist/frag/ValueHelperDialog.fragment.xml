@@ -1,0 +1,5 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns="sap.m">
+	<TableSelectDialog title="{i18n>ValueHelperDialog.title}" class="sapUiNoContentPadding" contentWidth="60rem" growing="true" growingThreshold="100" confirm="_onConfirm" cancel="_onCancel" liveChange="_onLiveChange">
+		<!-- Columns are created dynamically, depending on value helper. -->
+	</TableSelectDialog>
+</core:FragmentDefinition>

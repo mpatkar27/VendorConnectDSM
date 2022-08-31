@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var e={Fetch:"Fetch",Key:"Key",Count:"Count",DeleteChange:"DeleteChange"};return e});

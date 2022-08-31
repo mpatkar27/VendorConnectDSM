@@ -1,0 +1,303 @@
+/* CSS class naming convention: gramontPlmVc_<viewname/fragname>_<classname>. */
+
+.gramontPlmVc_ExpandVerticalLayout {
+	display: inline-block;
+	padding-top: 0.8rem;
+	padding-bottom: 0.8rem;
+	padding-left: 0.75rem;
+	padding-right: 0.75rem;
+	border: 1px solid #bfbfbf;
+	margin-top: 0.25rem;
+	margin-bottom: 0.25rem;
+}
+
+/* FIXMEVC: sap_fiori_3
+.gramontPlmVc_ExpandVerticalLayout {
+	border: 0.0625rem solid #89919a;
+	border-radius: 0.125rem;
+}
+*/
+.sapMBarTitleStart .sapMBarPH { text-align: center; }
+.sapUiSizeCompact .gramontPlmVc_ExpandVerticalLayout {
+	padding-top: 0.3rem;
+	padding-bottom: 0rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	margin-top: 0.1875rem;
+	margin-bottom: 0.1875rem;
+}
+
+.gramontPlmVc_ExpandVerticalLayout_Disabled {
+	border-color: #dfdfdf;
+}
+
+/* FIXMEVC: sap_fiori_3
+.gramontPlmVc_ExpandVerticalLayout_Disabled {
+	border-color: #d0d3d7;
+}
+*/
+
+.gramontPlmVc_Field {
+	display: inline-block;
+}
+
+.gramontPlmVc_Table_Table { /* For table tag. */
+	border-collapse: separate;
+	border-spacing: 0px;
+	width: 100%;
+}
+
+.gramontPlmVc_Table_Table_RowMode_Horizontal {
+}
+
+.gramontPlmVc_Table_Table_RowMode_Vertical {
+}
+
+.gramontPlmVc_Table_Table_Sticky {
+}
+
+.gramontPlmVc_Table_Table_Layout_Auto {
+	table-layout: auto;
+}
+
+.gramontPlmVc_Table_Table_Layout_Fixed {
+	table-layout: fixed;
+}
+
+.gramontPlmVc_Table_Table .sapMText,
+.gramontPlmVc_Table_Table .sapMLabel {
+	color: #333333;
+}
+
+.gramontPlmVc_Table_Cell { /* For all table cells (header, data, nodata and rightfill). */
+	padding-top: 0.875rem;
+	padding-bottom: 0.875rem;
+	padding-left: 0.5rem;
+	padding-right: 0.5rem;
+	border-color: #f0f0f0;
+	border-style: solid;
+	border-top-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-width: 1px;
+}
+
+.sapUiSizeCompact .gramontPlmVc_Table_Cell { /* For all table cells (header, data, nodata and rightfill). */
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+
+.gramontPlmVc_Table_Table_RowMode_Horizontal tr .gramontPlmVc_Table_Cell:last-child {
+	border-right-width: 0px;
+}
+
+.gramontPlmVc_Table_Header { /* For header cells. */
+	background-color: #e2e1e1;
+	vertical-align: middle;
+}
+
+.gramontPlmVc_Table_Table_Sticky .gramontPlmVc_Table_Header {
+	position: sticky;
+	z-index: 10;
+}
+
+.gramontPlmVc_Table_Table_RowMode_Horizontal.gramontPlmVc_Table_Table_Sticky .gramontPlmVc_Table_Header {
+	top: 0px;
+	border-bottom-color: #999999;
+}
+
+.gramontPlmVc_Table_Table_RowMode_Vertical.gramontPlmVc_Table_Table_Sticky .gramontPlmVc_Table_Header {
+	left: 0px;
+	border-right-color: #999999;
+}
+
+.gramontPlmVc_Table_Data { /* For data cells. */
+	background-color: #ffffff;
+	padding-top: 0.215rem;
+	padding-bottom: 0.215rem;
+	position: relative; /* Needed for correct positioning of gramontPlmVc_Table_FloatingTooltip. */
+	vertical-align: top;
+}
+
+.sapUiSizeCompact .gramontPlmVc_Table_Data { /* For data cells. */
+	padding-top: 0.1rem;
+	padding-bottom: 0.1rem;
+}
+
+.gramontPlmVc_Table_Data_Error {
+	background-color: #fff0f0;
+}
+
+.gramontPlmVc_Table_Data_Deleted {
+	background-color: #f0f0f0;
+}
+
+.gramontPlmVc_Table_Data_AutoGrow {
+	background-color: #ffffcc;
+}
+
+.gramontPlmVc_Table_NoData { /* For nodata cell. */
+	background-color: #ffffff;
+	width: 100%; /* Fill available space. */
+	text-align: center;
+	vertical-align: middle;
+	font-size: 1rem;
+}
+
+.sapUiSizeCompact .gramontPlmVc_Table_NoData { /* For nodata cell. */
+	font-size: 0.875rem;
+	padding-top: 0.6rem;
+	padding-bottom: 0.6rem;
+}
+
+.gramontPlmVc_Table_RightFill { /* For rightfill cell. */
+	background-color: #ffffff;
+	width: 100%; /* Fill available space. */
+	padding-left: 0rem;
+	padding-right: 0rem;
+	border-right-width: 0px; /* For vertical row mode. */
+}
+
+.gramontPlmVc_Table_FloatingTooltip {
+	position: absolute;
+	font-size: 1rem;
+	z-index: 20; /* TODO: scrollarea clips tooltip issue */
+	padding: 0.25rem;
+	color: #ffffff;
+	background-color: rgba(54, 62, 67, 0.96);
+	border-radius: 0.25rem;
+	top: -2rem;
+	pointer-events: none;
+	white-space: nowrap;
+}
+
+.sapUiSizeCompact .gramontPlmVc_Table_FloatingTooltip {
+	font-size: 0.875rem;
+	top: -1.75rem;
+}
+
+.gramontPlmVc_CharValueControl {
+	white-space: nowrap;
+}
+
+.gramontPlmVc_TableManager_VAlign {
+	margin-top: 1rem;
+	margin-bottom: 0.7rem;
+}
+
+.sapUiSizeCompact .gramontPlmVc_TableManager_VAlign {
+	margin-top: 0.5rem;
+	margin-bottom: 0.2rem;
+}
+
+.pagetitle
+{
+	background-color: #03519e;
+
+	font-size: large;
+}
+/*.sapMText {*/
+/*    font-size: 1.5rem;*/
+/*    font-family: "72","72full",Arial,Helvetica,sans-serif;*/
+/*    line-height: normal;*/
+/*    color: #ffffff;*/
+/*    align-items: center;*/
+/*    font-weight: bold;*/
+/*}*/
+.sapUxAPObjectPageSection .sapUxAPObjectPageSectionContainer .sapUxAPObjectPageSubSection .sapUxAPBlockContainer {
+    background-color: white;
+}
+.sapMPanelBGTranslucent {
+    background-color: #f7f7f7;
+    
+}
+
+/*.gramontPlmVc_Table_Table .sapMText, .gramontPlmVc_Table_Table .sapMLabel {*/
+/*    color: #333333;*/
+/*    font-size: medium;*/
+/*    font-style: ;*/
+/*}*/
+sapMListTblCell {
+    padding: .875rem .5rem;
+    font-size: .875rem;
+    border-style: solid;
+    border-width: thin;
+    border-color: #f0f0f0;
+}
+.fnfrmt{
+	font-size: large;
+	color: #ffffff;
+	text-align: center;
+}
+.sapMColumnHeader {
+    display: flex;
+    flex: 1 1 auto;
+    background-color: #e8e8e8;
+}
+.fnfrmthd{
+	font-size: large;
+	font-family: "72","72full",Arial,Helvetica,sans-serif;
+}
+.scrcnt
+{
+	backgroun-color: #ffff;
+	padding: 1rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    overflow: auto;
+    white-space: normal;
+}
+.sapMITBContent {
+    border-bottom: .0625rem solid #d9d9d9;
+    background-color: #fff;
+}
+.sapMPanelWrappingDiv.sapMPanelWrappingDivExpanded {
+    border-bottom-width: 0;
+    background-color: #e8e8e8;
+}
+.sapMPanelContent {
+    padding: 0rem 0rem 0rem 0rem;
+    box-sizing: border-box;
+    overflow: auto;
+    white-space: normal;
+}
+.sapMPanelContent1 {
+    padding: 1rem 1rem 1rem 1rem;
+    box-sizing: border-box;
+    overflow: auto;
+    white-space: normal;
+}
+.sapMITBFilter .sapMITBText .sapMITHTextContent {
+    display: inline-block;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    font-size: medium;
+}
+.sapMITBHorizontal.sapMITBFilter {
+    margin-top: 0.125rem;
+    margin-left: 2.5rem;
+}
+.sapMListHdrText {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    font-size: 1.125rem;
+    font-family: "72","72full",Arial,Helvetica,sans-serif;
+    text-align: center;
+    color: #32363a;
+    height: 3rem;
+    line-height: 3rem;
+    padding: 0 1rem;
+    background-color: #e6e6e7;
+    border-bottom: 1px solid #d9d9d9;
+}
+.sapUiSizeCompact .sapMPanel .sapMPanelHdr {
+    line-height: 2rem;
+    height: 1.65rem;
+}
+.sapMPanelWrappingDivTb {
+    position: relative;
+    background-color: #d3d3d3;
+}

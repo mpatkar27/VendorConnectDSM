@@ -1,0 +1,41 @@
+{
+  "welcomeFile": "index.html",
+  "routes": [
+    {
+      "path": "/sap/opu/odata",
+      "target": {
+        "type": "destination",
+        "name": "Gramont_S4HANA_GW_DEV",
+        "entryPath": "/sap/opu/odata"
+      },
+      "description": "Gramont S4HANA GW DEV"
+    },
+    {
+      "path": "/sap/bc/ui5_ui5",
+      "target": {
+        "type": "destination",
+        "name": "Gramont_S4HANA_GW_DEV",
+        "entryPath": "/sap/bc/ui5_ui5"
+      },
+      "description": "Gramont S4HANA GW DEV"
+    },
+    {
+      "path": "/resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/resources"
+      },
+      "description": "SAPUI5 Resources"
+    },
+    {
+      "path": "/test-resources",
+      "target": {
+        "type": "service",
+        "name": "sapui5",
+        "entryPath": "/test-resources"
+      },
+      "description": "SAPUI5 Test Resources"
+    }
+  ]
+}

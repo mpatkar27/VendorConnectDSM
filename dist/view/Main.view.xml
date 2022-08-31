@@ -1,0 +1,43 @@
+<core:View xmlns:core="sap.ui.core" xmlns="sap.m" controllerName="gramont.VCDSM.specedit.controller.Main" displayBlock="true"
+	xmlns:f="sap.ui.layout.form">
+	<App id="app">
+		<pages>
+			<Page id="page">
+				<content>
+					<Panel class="scrcnt">
+						<Text text="" width="90%" class="fnfrmthd"/>
+						<Image id="imglog" src="" height="70px" width="10%"/>
+					</Panel>
+					<VBox class="sapUiSmallMargin">
+						<f:SimpleForm id="upldform" editable="true" layout="ResponsiveGridLayout" title="Please provide material information to start the request"
+							labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4"
+							emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1">
+							<!--<Label text="Type of Material" labelFor="selectfsub"/>-->
+							<!--<Select id="selectfsub" change="_onChangesel" items="">-->
+							<!--	<core:Item key="vb" text="VERP" enabled="true"/>-->
+							<!--	<core:Item key="vb1" text="HALB" enabled="true"/>-->
+							<!--</Select>-->
+							<!--<Label text="Business Unit" labelFor="selectfbus"/>-->
+							<!--<Select id="selectfbus" change="_onChangesel" items="">-->
+							<!--	<core:Item key="Pack" text="Food and Beverage" enabled="true"/>-->
+							<!--	<core:Item key="RD" text="Animal Health" enabled="true"/>-->
+							<!--	<core:Item key="RD1" text="Personal Care" enabled="true"/>-->
+							<!--	<core:Item key="RD2" text="Pharma" enabled="true"/>-->
+							<!--</Select>-->
+							<!--<Label text="Material Description" labelFor="inpdesc"/>-->
+							<!--<Input id="inpdesc" placeholder="Material Description"/>-->
+							<Label text="Material Number:" labelFor="mat"/>
+							<Input id="mat" placeholder="Enter Material Number" showValueHelp="true" valueHelpRequest="handleValueHelp"/>
+						</f:SimpleForm>
+					</VBox>
+				</content>
+				<footer>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Button icon="sap-icon://create" text="Create" type="Accept" press="_oncrtnwspec"/>
+					</OverflowToolbar>
+				</footer>
+			</Page>
+		</pages>
+	</App>
+</core:View>

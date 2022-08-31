@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var s=function(s,e){this.messageKey=s;this.args=e?e:[]};return s});

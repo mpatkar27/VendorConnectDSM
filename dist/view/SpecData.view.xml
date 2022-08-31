@@ -1,0 +1,31 @@
+<core:View xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:f="sap.f" xmlns:gramont="gramont.VCDSM.specedit.control"
+	xmlns:t="sap.ui.table" xmlns:u="sap.ui.unified" xmlns:c="sap.suite.ui.commons" controllerName="gramont.VCDSM.specedit.controller.SpecData">
+	<Page showHeader="false">
+		<content>
+			<ScrollContainer height="100%" width="100%" vertical="true">
+				<Toolbar class="pagetitle" id="toolbar1" height="50px" width="100%" visible="false">
+					<ToolbarSpacer/>
+					<Button id="btnbck" press="_onBack" icon="sap-icon://nav-back"/>
+					<Title id="txthd" text="{i18n>title}" width="70%" class="fnfrmt"/>
+					<ToolbarSpacer/>
+				</Toolbar>
+				<Panel class="scrcnt">
+					<Text id="txthd1" text="" width="40%" class="fnfrmthd"/>
+					<Text text="" width="53%" class="fnfrmthd"/>
+					<Image id="imglog" src="" height="70px" width="7%"/>
+				</Panel>
+				<IconTabBar id="ictb" expanded="true" class="sapUiResponsiveContentPadding" select="onnavtab">
+					<items></items>
+				</IconTabBar>
+			</ScrollContainer>
+		</content>
+		<footer>
+			<OverflowToolbar id="tlb2" visible="false">
+				<ToolbarSpacer/>
+				<Button id="savbtn" text="{i18n>dsave}" press="_onSave" type="Emphasized"/>
+				<Button id="subbtn" text="{i18n>dsubm}" press="_onSave" type="Emphasized"/>
+				<Button text="{i18n>dcan}" press="_onCancel" type="Transparent"/>
+			</OverflowToolbar>
+		</footer>
+	</Page>
+</core:View>

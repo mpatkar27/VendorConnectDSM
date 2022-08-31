@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var e={Qual:"QUAL",MultiComp:"MLVL_COMP",Quant:"QUANT",Phrase:"Phrase",DocLink:"DocLink",UserDefinedText:"UserDefinedText"};return e});

@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var n={Instance:"Instance",Composition:"Composition",Phrase:"Phrase"};return n});

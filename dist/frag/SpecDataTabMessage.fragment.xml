@@ -1,0 +1,21 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:c="sap.suite.ui.commons">
+	<IconTabFilter id="ictf4" text="{i18n>SpecDataTabMessage.title}" key="chat" icon="sap-icon://comment" design="Horizontal">
+		<content>
+			<c:Timeline id="chatTimeline" enableDoubleSided="true" textHeight="8" sortOldestFirst="false" filterTitle="{i18n>usrnm}" content="{/}"  showTimeFilter="false" width="70%" showSearch="false">
+				<c:content>
+					<c:TimelineItem dateTime="{ path: 'datetime', formatter: '_formatDateTime' }" userName="{=!${template} ? ${USER_NAME} : null}"
+						filterValue="{USER_NAME}">
+						<c:embeddedControl>
+							<VBox>
+								<Text text="{CHAT}" visible="{=!${template}}" class="sapUiTinyMargin"/>
+								<TextArea value="{CHAT}" growing="false" height="150px" width="100%" visible="{template}" placeholder="{i18n>UserCommentHint}"
+									valueLiveUpdate="true" change="_onChangeCom"/>
+								<Button visible="{template}" text="{i18n>submitButtonText}" press="_addcomment"/>
+							</VBox>
+						</c:embeddedControl>
+					</c:TimelineItem>
+				</c:content>
+			</c:Timeline>
+		</content>
+	</IconTabFilter>
+</core:FragmentDefinition>

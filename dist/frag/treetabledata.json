@@ -1,0 +1,23 @@
+{
+  "catalog": {
+    "ingredient": {
+      "categories": [
+        {"name": "Beef", "Comptype":"Ingredient", "ingredient":"0", "quantity":"66%", "orgcntry":"UK/Ireland"},
+        {"name": "Pork", "Comptype":"Ingredient", "ingredient":"0", "quantity":"29%", "orgcntry":"UK/Ireland"},
+        {"name": "Salt", "Comptype":"Ingredient", "ingredient":"0", "quantity":"3.1%", "orgcntry":""},
+          {"name": "Spice Mix", "categories": [
+              {"name":"Mustard", "Comptype":"Ingredient", "ingredient":"0", "quantity":"0.9%", "orgcntry":""},
+              {"name":"Paprika", "Comptype":"Ingredient", "ingredient":"0", "quantity":"0.56%", "orgcntry":""},
+              {"name":"Black Pepper", "Comptype":"Ingredient", "ingredient":"0", "quantity":"0.24%", "orgcntry":""},
+              {"name":"Garlic Powder", "Comptype":"Ingredient", "ingredient":"0", "quantity":"0.2%", "orgcntry":""}
+            ], "quantity":"1.9"}
+        ]}
+
+    },
+  "sizes": [
+    {"key": "XS", "value": "Extra Small"},
+    {"key": "S", "value": "Small"},
+    {"key": "M", "value": "Medium"},
+    {"key": "L", "value": "Large"}
+  ]
+  }

@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/core/Control"],function(t){"use strict";var e=t.extend("gramont.VCDSM.specedit.control.DestroyListener",{setDestroyCallback:function(t){this._fDestroyCallback=t},exit:function(){if(this._fDestroyCallback)this._fDestroyCallback()}});return e});

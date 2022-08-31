@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m">
+	<!--<uxap:ObjectPageSection title="{tabModel>/title}">-->
+	<!--test{-->
+		<IconTabFilter text="" icon="" key="" design="Horizontal">
+			<content>
+				
+			</content>
+		</IconTabFilter>
+		<!--}test-->
+		<!-- Content is created dynamically in controller. -->
+	<!--</uxap:ObjectPageSection>-->
+</core:FragmentDefinition>

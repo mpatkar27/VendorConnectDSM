@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var r="_ModelManagerADMIN";var e={Error:"error",ErrorMessage:"errorMessage",Deleted:"deleted",Field:"field",IntStatus:"intStatus",AutoGrowEntry:"autoGrowEntry",AutoGrowVisible:"autoGrowVisible",OrigEntry:"origEntry",ForceReset:"forceReset"};var t={};for(var o in e)t[o]=r+"/"+e[o];var a={Prefix:r,PropName:e,FullPropName:t};return a});

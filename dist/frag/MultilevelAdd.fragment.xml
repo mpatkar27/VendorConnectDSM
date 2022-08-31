@@ -1,0 +1,58 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:t="sap.ui.table" xmlns:l="sap.ui.layout"
+	xmlns:f="sap.ui.layout.form" xmlns:form="sap.ui.layout.form" xmlns:table="sap.ui.table">
+	<Dialog title="{i18n>AdvSrchFormTitle}" contentWidth="70rem">
+		<endButton>
+			<Button text="{i18n>AdvancedSearchClose}" press="_onClose"/>
+		</endButton>
+		<Panel id="pnl1" expandable="true" headerText="{i18n>AdvSrchPanel1Title}" width="auto" class="sapUiResponsiveMargin mainToolbar-header"
+			expanded="{dialogModel>/AdvSrchPanel1Expanded}">
+			<content>
+				<form:Form id="AdvSrchForm" editable="true" width="100%">
+					<form:layout>
+						<form:ResponsiveGridLayout adjustLabelSpan="false" columnsL="2" labelSpanL="3" columnsM="2" labelSpanM="3" labelSpanS="2"/>
+					</form:layout>
+					<form:formContainers>
+						<form:FormContainer>
+							<form:formElements>
+								<form:FormElement label="{i18n>AdvSrchFormCont1Elm3Label}">
+									<Input id="specdetinp" value="{dialogModel>/aData/0/IDENT1}" width="17rem" submit="_onSpecSearch"/>
+								</form:FormElement>
+								<form:FormElement>
+									<Button text="{i18n>AdvSrchBtnSearchTxt}" width="7rem" press="_onSpecSearch"/>
+								</form:FormElement>
+							</form:formElements>
+						</form:FormContainer>
+						<form:FormContainer>
+							<form:formElements>
+								<form:FormElement label="{i18n>AdvSrchFormCont1Elm1Label}" visible="false">
+									<Input id="specinp" value="{dialogModel>/aData/0/SUBID}" width="17rem" submit="_onSpecSearch" visible="false"/>
+								</form:FormElement>
+							</form:formElements>
+						</form:FormContainer>
+					</form:formContainers>
+				</form:Form>
+			</content>
+		</Panel>
+		<Panel id="pnl2" expandable="true" headerText="{i18n>AdvSrchPanel2Title}" width="auto" class="sapUiResponsiveMargin"
+			expanded="{dialogModel>/AdvSrchPanel2Expanded}">
+			<content>
+				<table:Table id="AdvSrchResultTbl" selectionMode="None" rows="{resModel>/aData/}" visibleRowCount="10" cellClick="_onaddnode">
+					<table:columns>
+						<table:Column>
+							<Label text="{i18n>AdvSrchResultTblCol1Label}" textAlign="Left"/>
+							<table:template>
+								<Text text="{resModel>SUBID}"/>
+							</table:template>
+						</table:Column>
+						<table:Column>
+							<Label text="{i18n>AdvSrchResultTblCol2Label}" textAlign="Left"/>
+							<table:template>
+								<Text text="{resModel>IDENT_DESCR1}"/>
+							</table:template>
+						</table:Column>
+					</table:columns>
+				</table:Table>
+			</content>
+		</Panel>
+	</Dialog>
+</core:FragmentDefinition>

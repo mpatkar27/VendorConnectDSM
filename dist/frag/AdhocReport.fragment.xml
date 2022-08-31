@@ -1,0 +1,58 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:layout="sap.ui.layout" xmlns:form="sap.ui.layout.form" xmlns="sap.m">
+	<Dialog title="{i18n>AdhocReport.title}" contentWidth="45rem">
+		<content>
+			 <form:Form id="form" editable="true">
+			 	<!-- FIXME: layoutData refactor/check -->
+				<form:layout>
+          			<form:ResponsiveGridLayout columnsL="1" columnsM="1" labelSpanL="4" labelSpanM="4" labelSpanS="12"/>
+        		</form:layout>
+
+				<form:formContainers>
+					<form:FormContainer>
+						<form:formElements>
+							<form:FormElement label="{i18n>AdhocReport.form.genVariant}">
+								<Input value="{/LDEPID}" showValueHelp="true" maxLength="10" valueHelpRequest="_onValueHelpRequest">
+									<layoutData>
+										<layout:GridData span="L4 M4 S4"/>
+									</layoutData>
+								</Input>
+							</form:FormElement>
+
+							<form:FormElement label="{i18n>AdhocReport.form.statusCheck}">
+								<CheckBox selected="{/STATUS_CHK_IND}">
+									<layoutData>
+										<layout:GridData span="L2 M2 S2"/>
+									</layoutData>
+								</CheckBox>
+							</form:FormElement>
+
+							<form:FormElement label="{i18n>AdhocReport.form.lang}">
+								<Input value="{/LANGU}" showValueHelp="true" maxLength="2" valueHelpRequest="_onValueHelpRequest">
+									<layoutData>
+										<layout:GridData span="L2 M2 S2"/>
+									</layoutData>
+								</Input>
+							</form:FormElement>
+
+							<form:FormElement label="{i18n>AdhocReport.form.keyDate}">
+								<DatePicker value="{path: '/KEY_DATE', type: 'sap.ui.model.type.Date', formatOptions: {strictParsing: true}}" change="_onKeyDateChange" parseError="_onKeyDateParseError">
+									<layoutData>
+										<layout:GridData span="L4 M4 S4"/>
+									</layoutData>
+								</DatePicker>
+							</form:FormElement>
+ 						</form:formElements>
+ 					</form:FormContainer>
+ 				</form:formContainers>
+ 			</form:Form>
+		</content>
+
+		<beginButton>
+			<Button text="{i18n>Common.ok}" press="_onOK"/>
+		</beginButton>
+
+		<endButton>
+			<Button text="{i18n>Common.cancel}" press="_onCancel"/>
+		</endButton>
+	</Dialog>
+</core:FragmentDefinition>

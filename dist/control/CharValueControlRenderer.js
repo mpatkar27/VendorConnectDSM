@@ -1,0 +1,1 @@
+sap.ui.define([],function(){"use strict";var r={render:function(r,t){r.write("<div");r.writeControlData(t);r.addClass("gramontPlmVc_CharValueControl");r.writeClasses();r.write(">");var e=t.getInnerControl();var n=t.getEditButton();var i=t.getShowSeparator()&&e&&n;if(e)r.renderControl(e);if(i)r.write("&nbsp;");if(n)r.renderControl(n);r.write("</div>")}};return r},true);

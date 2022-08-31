@@ -1,0 +1,17 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m"
+	xmlns:upload="sap.m.upload" xmlns:u="sap.ui.unified" xmlns:f="sap.ui.layout.form">
+	<Dialog title="{i18n>commit.title}" contentWidth="50rem" class="sapUiNoContentPadding">
+		<content>
+			<f:SimpleForm id="upldform" editable="true" layout="ResponsiveGridLayout">
+				<Label text="Login ID" labelFor="inplogid"/>
+				<Input id="inplogid" placeholder="Enter Description"/>
+				<Label text="Password" labelFor="inppass"/>
+				<Input id="inppass" placeholder="Enter Description" type="Password"/>
+			</f:SimpleForm>
+		</content>
+		<buttons>
+			<Button id="login" text="Login" press="_onlgn"/>
+			<Button id="clsbtn" text="Close" press="_onClose"/>
+		</buttons>
+	</Dialog>
+</core:FragmentDefinition>

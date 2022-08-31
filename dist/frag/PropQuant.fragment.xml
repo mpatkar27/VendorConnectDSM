@@ -1,0 +1,18 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:gramont="gramont.VCDSM.specedit.control" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:uir="sap.ui.richtexteditor">
+	<Panel expandable="true" headerText="{propModel>/title}" width="auto" class="sapUiResponsiveMargin" expanded="true" id="quantsubsec">
+		<headerToolbar>
+			<OverflowToolbar>
+				<Title text="{propModel>/title}"/>
+				<core:Icon src="sap-icon://message-information" press="_infopop" visible="{editMode}"/>
+			</OverflowToolbar>
+		</headerToolbar>
+		<content>
+		<Table id="quant">
+			<columns></columns>
+		</Table>
+		<Table id="udt">
+			<columns></columns>
+		</Table>
+		</content>
+	</Panel>
+</core:FragmentDefinition>

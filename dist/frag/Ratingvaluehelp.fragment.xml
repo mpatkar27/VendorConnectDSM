@@ -1,0 +1,12 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:core="sap.ui.core">
+	<SelectDialog
+		id="selectDialog"
+		title="{i18n>Rating}"
+		items="{/}"
+		confirm="_onValueHelpClose"
+		cancel="_onValueHelpClose">
+		<StandardListItem
+			title="{Name}"
+			description="{ProductId}" />
+	</SelectDialog>
+</core:FragmentDefinition>

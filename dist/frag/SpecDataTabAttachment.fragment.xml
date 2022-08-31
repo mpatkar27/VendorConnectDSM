@@ -1,0 +1,31 @@
+<core:FragmentDefinition xmlns:core="sap.ui.core" xmlns:uxap="sap.uxap" xmlns="sap.m" xmlns:upload="sap.m.upload" xmlns:u="sap.ui.unified">
+	<IconTabFilter id="ictf3" text="{i18n>SpecDataTabAttachment.title}" key="attachments" icon="sap-icon://attachment" design="Horizontal">
+		<Panel expandable="true" headerText="{i18n>reqdoc}" width="auto" class="scrcnt" expanded="true">
+			<Table fixedLayout="false" width="100%" id="attachmenttable">
+				<headerToolbar>
+					<OverflowToolbar>
+						<ToolbarSpacer/>
+						<Label text="{i18n>upldfil}">
+							<layoutData>
+								<OverflowToolbarLayoutData priority="NeverOverflow"/>
+							</layoutData>
+						</Label>
+						<Button icon="sap-icon://add" id="upldbtn" press="_opendialog">
+							<layoutData>
+								<OverflowToolbarLayoutData priority="NeverOverflow"/>
+							</layoutData>
+						</Button>
+					</OverflowToolbar>
+				</headerToolbar>
+				<columns>
+				</columns>
+			</Table>
+		</Panel>
+		<OverflowToolbar id="tlb3" visible="true">
+			<ToolbarSpacer/>
+			<Button text="{i18n>dsave}" press="_onSave" type="Emphasized"/>
+			<Button text="{i18n>dsubm}" press="_onSubmit" type="Emphasized"/>
+			<Button text="{i18n>dcan}" press="_onCancel" type="Transparent"/>
+		</OverflowToolbar>
+	</IconTabFilter>
+</core:FragmentDefinition>
